@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# 2021 Google Cloud Ready Facilitator Progress Dashboard
+### Developed by Naseem Shah, 2021 Google Cloud Ready Facilitator from Cochin University of Science and Technology.
+### Made for 2021 Google Cloud Ready Facilitator.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Application automates the Maual GCR facilitor daily student report generation. This application was developed based on data recieved from 2021 daily student report sent from Google. So this best compatible with 2021 GCRF daily student report.
 
-## Available Scripts
+## Features
+- Facilitators just have to replace with latest `.csv` file recived from Google. Nothing else to do!
+- Only the students can see their progress and their personal details, which saves facilitators time. 
+- Facilitators does not need to spend hours filtering data and makeing progress reports daily. 
+- Leaderboard Page makes the students enrolled in the program to have sense of competition thus making completing their Quests and Skill badges sooner.
+- Students get latest data just with a click and track thier progress.
 
-In the project directory, you can run:
+## How this works?
+- Application will reads the data directly from the 2021 GCRF daily student report sent to facilitators which is in `.csv` format. 
+- Upon entering the email address by student, their progess is displayed on "My Progress Tab". This application will parse through the data 
+- Leaderboard can be accessed in "Leaderboard" tab.
 
-### `yarn start`
+## How to host GCRF Dashboard for your campus?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Well, it's easy! This was developed such that facilitators have minimal effort to get this up and running. Even if you don't know React and some the technologies used to develop this! Just follow follwing freindly steps.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

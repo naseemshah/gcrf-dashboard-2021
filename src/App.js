@@ -9,10 +9,11 @@ function App() {
   let [isLoading,setIsLoading] = useState(true)
   useEffect(()=>{
     setIsLoading(true)
-    Papa.parse("/data.csv", {
+    Papa.parse("/studentData/data.csv", {
       download: true,
+      header: true,
       complete: function(results) {
-        setIsLoading(false)
+        // setIsLoading(false)
         console.log(results);
       }
     });

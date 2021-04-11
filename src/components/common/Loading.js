@@ -27,7 +27,7 @@ let StyledLoadingContainer = styled(motion.div)`
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.193);
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     img{
         width: 35px;

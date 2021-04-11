@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Papa from 'papaparse'
 import { useEffect, useState } from 'react';
@@ -13,7 +12,7 @@ function App() {
       download: true,
       header: true,
       complete: function(results) {
-        // setIsLoading(false)
+        setIsLoading(false)
         console.log(results);
       }
     });

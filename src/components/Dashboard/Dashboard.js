@@ -2,12 +2,19 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion'
  
-function Dashboard(props) {
+function Dashboard({studentsData}) {
     let [userEmail,setUserEmail] = useState(null)
     let [showDashboard,setShowDashboard] = useState(false)
     let handleUserEmailFormSubmit = (e) =>{
         e.preventDefault()
-        setShowDashboard(true)
+        if(studentsData?.data){
+            console.log(studentsData.data);
+            let foundStudent = studentsData.data.find( student => {
+                return student["Student Email"] === userEmail
+            })
+            console.log(foundStudent);
+        }
+        // setShowDashboard(true)
     }
     return (
         <StyledDash>

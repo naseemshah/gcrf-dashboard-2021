@@ -8,14 +8,15 @@ import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   let [isLoading,setIsLoading] = useState(true)
+  let [studentsData,setStudentsData] = useState([])
   useEffect(()=>{
     setIsLoading(true)
     Papa.parse("/studentData/data.csv", {
       download: true,
       header: true,
       complete: function(results) {
+        setStudentsData(results)
         setIsLoading(false)
-        console.log(results);
       }
     });
   },[])
@@ -23,7 +24,7 @@ function App() {
     <div>
       { isLoading && <Loading />}
       <Header />
-      <Dashboard />
+      <Dashboard studentsData={studentsData} />
     </div>
   );
 }

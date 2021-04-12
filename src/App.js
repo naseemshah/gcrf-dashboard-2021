@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 
 import Loading from './components/common/Loading'
 import Header from './components/common/Header';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   let [isLoading,setIsLoading] = useState(true)
@@ -20,10 +21,9 @@ function App() {
   },[])
   return (
     <div>
+      { isLoading && <Loading />}
       <Header />
-      {
-        isLoading && <Loading />
-      }
+      <Dashboard />
     </div>
   );
 }

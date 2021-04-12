@@ -11,3 +11,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+input,button{
+  font-family: 'Poppins', sans-serif;
+}

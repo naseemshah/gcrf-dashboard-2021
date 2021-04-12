@@ -3,6 +3,7 @@ import Papa from 'papaparse'
 import { useEffect, useState } from 'react';
 
 import Loading from './components/common/Loading'
+import Header from './components/common/Header';
 
 function App() {
   let [isLoading,setIsLoading] = useState(true)
@@ -19,6 +20,7 @@ function App() {
   },[])
   return (
     <div>
+      <Header />
       {
         isLoading && <Loading />
       }

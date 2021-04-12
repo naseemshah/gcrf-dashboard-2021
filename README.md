@@ -1,6 +1,6 @@
 # 2021 Google Cloud Ready Facilitator Progress Dashboard
 ### Developed by Naseem Shah, 2021 Google Cloud Ready Facilitator from Cochin University of Science and Technology.
-### Made for 2021 Google Cloud Ready Facilitator.
+### Made for 2021 Google Cloud Ready Facilitators.
 
 This Application automates the Maual GCR facilitor daily student report generation. This application was developed based on data recieved from 2021 daily student report sent from Google. So this best compatible with 2021 GCRF daily student report.
 

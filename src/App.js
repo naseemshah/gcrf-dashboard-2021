@@ -15,7 +15,12 @@ function App() {
       download: true,
       header: true,
       complete: function(results) {
+        //Sorting based on the number of quest badges + skill badges  
+        results.data.sort((student1,student2)=>{
+          return (student2["# of Quests Completed"]+student2["# of Skill Badges Completed"])-(student1["# of Quests Completed"]+student1["# of Skill Badges Completed"])
+        })
         setStudentsData(results)
+        console.log(results);
         setIsLoading(false)
       }
     });

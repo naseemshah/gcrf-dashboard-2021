@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 import MessageBox from './MessageBox';
+import StudentEmailForm from './StudentEmailForm';
+import ProgressCard from './ProgressCard.js'
  
 function Dashboard({studentsData,setIsLoading}) {
     let [userEmail,setUserEmail] = useState(null)
-    let [showDashboard,setShowDashboard] = useState(false)
+    let [showProgressCard,setShowProgressCard] = useState(false)
     let [message, setMessage] = useState(null)
+    let [userStudentDetails,setUserStudentDetails] = useState(null)
     let handleUserEmailFormSubmit = (e) =>{
         setMessage(false)
         e.preventDefault()
@@ -18,7 +21,9 @@ function Dashboard({studentsData,setIsLoading}) {
             })
             console.log(foundStudent);
             if(foundStudent){
+                setUserStudentDetails(foundStudent)
                 setIsLoading(false)
+                setShowProgressCard(true)
             }else{
                 setIsLoading(false)
                 setMessage({
@@ -33,33 +38,24 @@ function Dashboard({studentsData,setIsLoading}) {
             })
             setIsLoading(false)
         }
-        // setShowDashboard(true)
+        // setShowProgressCard(true)
     }
     return (
         <StyledDash>
             <AnimatePresence>
                 {
-                    !showDashboard &&
-                    <motion.form
-                        initial={{ opacity: 0, translateY: 100 }}
-                        animate={{ opacity: 1, translateY: 0 }}
-                        exit={{ opacity: 0, translateY: 100 }}
-                        className="student-email-form" 
-                        onChange={(e)=>{ setUserEmail(e.target.value) }}
-                        onSubmit={handleUserEmailFormSubmit}
-                    >
-                        <input 
-                            className="student-email-input"
-                            type="email"
-                            placeholder="Type in your email. Ex: john@google.com"
-                            required
-                        />
-                        <button
-                            onClick={()=>{}}
-                            className="student-form-submit-button"
-                            type="submit"
-                        >Check my progress</button>
-                    </motion.form>
+                    !showProgressCard && 
+                    <StudentEmailForm 
+                        handleUserEmailFormSubmit={handleUserEmailFormSubmit}
+                        setUserEmail={setUserEmail}
+                    /> 
+                    
+                }
+            </AnimatePresence>
+            <AnimatePresence>
+                {
+                   showProgressCard && 
+                   <ProgressCard userStudentDetails={userStudentDetails} /> 
                 }
             </AnimatePresence>
             <AnimatePresence>

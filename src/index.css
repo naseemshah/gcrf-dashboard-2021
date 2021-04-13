@@ -10,6 +10,7 @@ body {
   background: url("/src/assets/img/webbg.png");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 input,button{
   font-family: 'Poppins', sans-serif;

@@ -17,7 +17,7 @@ function StudentInfo({studentData}) {
             </div>
             <div className="student-info-card">
                 <p className="student-info-card-title"># of Skill Badges Completed</p>
-                <p className="student-info-card-number-value">{studentData['# of Skill Badges Completedd'] || 0}</p>
+                <p className="student-info-card-number-value">{studentData['# of Skill Badges Completed']}</p>
             </div>
             <div className="student-info-card">
                 <p className="student-info-card-title">Enrolment Date & Time</p>

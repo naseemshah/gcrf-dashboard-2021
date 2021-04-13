@@ -89,6 +89,13 @@ function ProgressCard({userStudentDetails}) {
 export default ProgressCard;
 
 let StyledProgressCard = styled(motion.div)`
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.29);
+    border-radius: 10px;
+    padding: 10px;
     .progress-bars-container{
         display: flex;
         flex-wrap: wrap;
@@ -100,6 +107,7 @@ let StyledProgressCard = styled(motion.div)`
         margin: 0;
         padding: 0;
         font-weight: 400;
+        text-transform: capitalize;
     }
     .progress-item{
         display: flex;

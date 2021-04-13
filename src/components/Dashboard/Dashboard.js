@@ -80,10 +80,10 @@ let StyledDash = styled.div`
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
-    border: 2px solid black;
-    box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.29);
-    border-radius: 10px;
+    /* background-color: white; */
+    /* border: 2px solid black; */
+    /* box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.29); */
+    /* border-radius: 10px; */
     .student-email-form{
         display: flex;
         flex-direction: column;
@@ -112,6 +112,7 @@ let StyledDash = styled.div`
         border-radius: 39px;
         border: none;
         margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 15px;
         padding: 8px 15px;
         font-weight: 500;

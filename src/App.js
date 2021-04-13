@@ -3,8 +3,9 @@ import Papa from 'papaparse'
 import { useEffect, useState } from 'react';
 
 import Loading from './components/common/Loading'
-import Header from './components/common/Header';
-import Dashboard from './components/Dashboard/Dashboard';
+import Header from './components/common/Header'
+import Dashboard from './components/Dashboard/Dashboard'
+import Footer from './components/common/Footer'
 
 function App() {
   let [isLoading,setIsLoading] = useState(true)
@@ -33,6 +34,7 @@ function App() {
         studentsData={studentsData}
         setIsLoading={setIsLoading}
       />
+      <Footer />
     </div>
   );
 }

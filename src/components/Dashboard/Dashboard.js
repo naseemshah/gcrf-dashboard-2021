@@ -73,6 +73,8 @@ let StyledDash = styled.div`
     display: flex;
     flex-direction: column;
     padding: 30px;
+    padding-bottom: 10px;
+    margin-top: 20px;
     min-width: 400px;
     max-width: 820px;
     width: 70vw;

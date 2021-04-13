@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import styled from 'styled-components';
 import Milestone from './Milestone';
+import StudentInfo from './StudentInfo';
 
 function ProgressCard({userStudentDetails}) {
     let completedQuestBadges = parseInt(userStudentDetails["# of Quests Completed"])
@@ -79,6 +80,8 @@ function ProgressCard({userStudentDetails}) {
                     })
                 }
             </div>
+            <StudentInfo studentData={userStudentDetails} />
+            <p className="quest-message">Quest badges and Skill badges completed since your enrollment date will only be counted for progress. </p>
         </StyledProgressCard>
     );
 }
@@ -157,5 +160,9 @@ let StyledProgressCard = styled(motion.div)`
                 display: flex;
             }
         }
+    }
+    .quest-message{
+        font-size: 10px;
+        text-align: center;
     }
 `

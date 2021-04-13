@@ -1,18 +1,37 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion'
+import MessageBox from './MessageBox';
  
-function Dashboard({studentsData}) {
+function Dashboard({studentsData,setIsLoading}) {
     let [userEmail,setUserEmail] = useState(null)
     let [showDashboard,setShowDashboard] = useState(false)
+    let [message, setMessage] = useState(null)
     let handleUserEmailFormSubmit = (e) =>{
+        setMessage(false)
         e.preventDefault()
+        setIsLoading(true)
         if(studentsData?.data){
             console.log(studentsData.data);
             let foundStudent = studentsData.data.find( student => {
                 return student["Student Email"] === userEmail
             })
             console.log(foundStudent);
+            if(foundStudent){
+                setIsLoading(false)
+            }else{
+                setIsLoading(false)
+                setMessage({
+                    msg: "No Email address found. Please check your email. Use Email used in enrollment form.",
+                    isError: true
+                })
+            }
+        }else{
+            setMessage({
+                msg: "Some Error occured.",
+                isError: true
+            })
+            setIsLoading(false)
         }
         // setShowDashboard(true)
     }
@@ -41,6 +60,11 @@ function Dashboard({studentsData}) {
                             type="submit"
                         >Check my progress</button>
                     </motion.form>
+                }
+            </AnimatePresence>
+            <AnimatePresence>
+                {
+                   message && <MessageBox message={message} /> 
                 }
             </AnimatePresence>
         </StyledDash>

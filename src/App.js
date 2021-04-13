@@ -24,7 +24,10 @@ function App() {
     <div>
       { isLoading && <Loading />}
       <Header />
-      <Dashboard studentsData={studentsData} />
+      <Dashboard 
+        studentsData={studentsData}
+        setIsLoading={setIsLoading}
+      />
     </div>
   );
 }

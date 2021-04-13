@@ -74,9 +74,14 @@ let StyledDash = styled.div`
     flex-direction: column;
     padding: 30px;
     min-width: 400px;
-    width: 50vw;
+    max-width: 820px;
+    width: 70vw;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.29);
+    border-radius: 10px;
     .student-email-form{
         display: flex;
         flex-direction: column;

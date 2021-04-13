@@ -68,6 +68,7 @@ function ProgressCard({userStudentDetails}) {
             exit={{ opacity: 0, translateX: 2000 }}
             transition={{ delay: 0.5 }}
         >
+            <h1 className="greet-student">Welcome {userStudentDetails['Student Name']}!</h1>
             <div className="progress-bars-container">
                 {
                     milestones.map((milestone,id) =>{
@@ -88,11 +89,20 @@ let StyledProgressCard = styled(motion.div)`
     .progress-bars-container{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    .greet-student{
+        font-size: 25px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
     }
     .progress-item{
         display: flex;
         flex-direction: column;
         width: 280px;
+        margin: 10px;
         .progress-title{
             font-style: normal;
             font-weight: bold;
@@ -127,7 +137,6 @@ let StyledProgressCard = styled(motion.div)`
                 left: 0;
                 top: 0;
                 height: 100%;
-                z-index: -1;
             }
         }
         .progress-info-container{

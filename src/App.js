@@ -17,7 +17,7 @@ function App() {
       complete: function(results) {
         //Sorting based on the number of quest badges + skill badges  
         results.data.sort((student1,student2)=>{
-          return (student2["# of Quests Completed"]+student2["# of Skill Badges Completed"])-(student1["# of Quests Completed"]+student1["# of Skill Badges Completed"])
+          return (parseInt(student2["# of Quests Completed"]+student2["# of Skill Badges Completed"]))-parseInt((student1["# of Quests Completed"]+student1["# of Skill Badges Completed"]))
         })
         setStudentsData(results)
         console.log(results);

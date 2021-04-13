@@ -66,7 +66,7 @@ function ProgressCard({userStudentDetails}) {
         <StyledProgressCard
             initial={{ opacity: 0, translateX: 2000 }}
             animate={{ opacity: 1, translateX: 0 }}
-            exit={{ opacity: 0, translateX: 2000 }}
+            exit={{ opacity: 0, translateX: -2000 }}
             transition={{ delay: 0.5 }}
         >
             <h1 className="greet-student">Welcome {userStudentDetails['Student Name']}!</h1>
@@ -106,6 +106,7 @@ let StyledProgressCard = styled(motion.div)`
         text-align: center;
         margin: 0;
         padding: 0;
+        margin-top: 10px;
         font-weight: 400;
         text-transform: capitalize;
     }

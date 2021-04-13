@@ -14,15 +14,19 @@ function Milestone({milestoneData}) {
                     boxShadow: `0 0 0 2px ${milestoneData.milestoneColor} inset`
                 }}
             >
-                <p>{milestoneData.hasMilestoneUnlocked ? milestoneData.completedText : ''}</p>
+                <motion.p
+                    initial={{ translateX: 400 }}
+                    animate={{ translateX: 0}}
+                    transition={{ delay: 1.8 }}
+                >{milestoneData.hasMilestoneUnlocked ? milestoneData.completedText : ''}</motion.p>
                 <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: `${milestoneData.milestoneProgressPercentage}%`}}
-                transition={{ delay: 1, stiffness: 500 , damping: 300 }}
-                className="progress-width"
-                style={{
-                    backgroundColor: `${milestoneData.milestoneColor}`
-                }}
+                    initial={{ width: 0 }}
+                    animate={{ width: `${milestoneData.milestoneProgressPercentage}%`}}
+                    transition={{ delay: 1, stiffness: 500 , damping: 300 }}
+                    className="progress-width"
+                    style={{
+                        backgroundColor: `${milestoneData.milestoneColor}`
+                    }}
                 ></motion.div>
             </div>
             <div className="progress-info-container">

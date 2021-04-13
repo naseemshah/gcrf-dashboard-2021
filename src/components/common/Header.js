@@ -4,7 +4,7 @@ import HeaderLogo from '../../assets/img/headerLogo.png'
 import { facilitatorInstituionName, facilitatorLastUpdated } from '../../appConfig'
 
 
-function Header(props) {
+function Header({showLeaderboard,setShowLeaderboard}) {
     return (
         <StyledHeader>
             <img src={HeaderLogo} alt=""/>
@@ -12,6 +12,16 @@ function Header(props) {
             <div className="header-info-container">
                 <p className="facilitator-last-updated">Last Updated: {facilitatorLastUpdated}</p>
                 <p className="facilitator-institution-name">{facilitatorInstituionName}</p>
+            </div>
+            <div className="tab-menu">
+                <p 
+                    className={`${ !showLeaderboard && 'tab-menu-active'}`}
+                    onClick={()=>{setShowLeaderboard(false)}}
+                >Your Progress</p>
+                <p
+                    className={`${ showLeaderboard && 'tab-menu-active'}`}
+                    onClick={()=>{setShowLeaderboard(true)}}
+                >Leaderboard</p>
             </div>
         </StyledHeader>
     );
@@ -24,6 +34,7 @@ let StyledHeader = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    padding-bottom: 0;
     h1{
         text-transform: uppercase;
         font-size: 25px;
@@ -57,6 +68,23 @@ let StyledHeader = styled.div`
             margin: 0;
             padding: 0;
             font-size: 12px;
+        }
+    }
+    .tab-menu{
+        display: flex;
+        margin: 20px;
+        p{
+            padding: 15px 20px;
+            color: black;
+            text-transform: uppercase;
+            font-size: 15px;
+            margin: 10px;
+            padding: 0;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .tab-menu-active{
+            border-bottom: 2px solid black;
         }
     }
 `

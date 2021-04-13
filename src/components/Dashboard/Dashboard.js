@@ -4,11 +4,12 @@ import { AnimatePresence } from 'framer-motion'
 import MessageBox from './MessageBox';
 import StudentEmailForm from './StudentEmailForm';
 import ProgressCard from './ProgressCard.js'
+import Leaderboard from './Leaderboard';
  
-function Dashboard({studentsData,setIsLoading}) {
+function Dashboard({studentsData,setIsLoading,showLeaderboard}) {
     let [userEmail,setUserEmail] = useState(null)
     let [showProgressCard,setShowProgressCard] = useState(false)
-    let [message, setMessage] = useState(null)
+    let [message,setMessage] = useState(null)
     let [userStudentDetails,setUserStudentDetails] = useState(null)
     let handleUserEmailFormSubmit = (e) =>{
         setMessage(false)
@@ -44,7 +45,7 @@ function Dashboard({studentsData,setIsLoading}) {
         <StyledDash>
             <AnimatePresence>
                 {
-                    !showProgressCard && 
+                    !showProgressCard && !showLeaderboard &&
                     <StudentEmailForm 
                         handleUserEmailFormSubmit={handleUserEmailFormSubmit}
                         setUserEmail={setUserEmail}
@@ -54,8 +55,14 @@ function Dashboard({studentsData,setIsLoading}) {
             </AnimatePresence>
             <AnimatePresence>
                 {
-                   showProgressCard && 
+                   showProgressCard && !showLeaderboard &&
                    <ProgressCard userStudentDetails={userStudentDetails} /> 
+                }
+            </AnimatePresence>
+            <AnimatePresence>
+                {
+                   showLeaderboard && 
+                   <Leaderboard /> 
                 }
             </AnimatePresence>
             <AnimatePresence>
@@ -74,7 +81,7 @@ let StyledDash = styled.div`
     flex-direction: column;
     padding: 30px;
     padding-bottom: 10px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     min-width: 400px;
     max-width: 820px;
     width: 70vw;
@@ -88,7 +95,7 @@ let StyledDash = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 0px;
     }
     .student-email-input{
         background: #FFFFFF;

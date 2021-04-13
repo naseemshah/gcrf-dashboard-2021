@@ -10,6 +10,7 @@ import Footer from './components/common/Footer'
 function App() {
   let [isLoading,setIsLoading] = useState(true)
   let [studentsData,setStudentsData] = useState([])
+  let [showLeaderboard,setShowLeaderboard] = useState(false)
   useEffect(()=>{
     setIsLoading(true)
     Papa.parse("/studentData/data.csv", {
@@ -29,8 +30,12 @@ function App() {
   return (
     <div>
       { isLoading && <Loading />}
-      <Header />
+      <Header 
+        showLeaderboard={showLeaderboard}
+        setShowLeaderboard={setShowLeaderboard}
+      />
       <Dashboard 
+        showLeaderboard={showLeaderboard}
         studentsData={studentsData}
         setIsLoading={setIsLoading}
       />

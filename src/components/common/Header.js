@@ -28,6 +28,7 @@ let StyledHeader = styled.div`
         text-transform: uppercase;
         font-size: 25px;
         color: #EA4335;
+        text-align: center;
     }
     img{
         max-width: 300px;
@@ -38,22 +39,24 @@ let StyledHeader = styled.div`
         background-color: white;
         box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.29);
         border-radius: 60px;
-        padding: 10px 20px;
+        padding: 7px 17px;
         .facilitator-last-updated{
             box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.29);
             border-radius: 39px;
             background: #34A853;
-            font-size: 15px;
+            font-size: 12px;
             padding: 5px 10px;
             color: white;
             margin: 0;
             margin-right: 10px;
+            font-weight: 600;
             white-space:  nowrap;
         }
         .facilitator-institution-name{
             font-weight: 600;
             margin: 0;
             padding: 0;
+            font-size: 12px;
         }
     }
 `

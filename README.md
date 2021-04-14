@@ -29,9 +29,7 @@ Well, it's easy! This was developed such that facilitators have minimal effort t
 ## READ THE STEPS CAREFULLY! 
 
 ### STEP 1 - Setting project up locally and testing it:
-- 1.1 - Fork/Clone this repo: 
-<br> 
-`git clone https://github.com/naseemshah/gcrf-dashboard-2021.git`
+- 1.1 - Fork/Clone this repo: <br> `git clone https://github.com/naseemshah/gcrf-dashboard-2021.git`
 <br>
 - 1.2 - Download Progress Report `.csv` and rename it to `data.csv`.
 - 1.3 - Create a folder named `studentData` in `public` folder. <br> <br>

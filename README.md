@@ -13,8 +13,8 @@ This Application automates the Maual GCR facilitor daily student report generati
 
 ## How this works?
 - Application will reads the data directly from the 2021 GCRF daily student report sent to facilitators which is in `.csv` format. 
-- Upon entering the email address by student, their progess is displayed on "My Progress Tab". This application will parse through the data 
-- Leaderboard can be accessed in "Leaderboard" tab.
+- Upon entering the email address by student, their progess is displayed on "My Progress Tab". This application will parse through the data.
+- Leaderboard can be accessed in "Leaderboard" tab so that students can have sense of competition.
 
 ## How to host GCRF Dashboard for your campus?
 
@@ -29,7 +29,7 @@ Well, it's easy! This was developed such that facilitators have minimal effort t
 ## READ THE STEPS CAREFULLY! 
 
 ### STEP 1 - Setting project up locally and testing it:
-- 1.1 - Clone this repo: 
+- 1.1 - Fork/Clone this repo: 
 <br> 
 `git clone https://github.com/naseemshah/gcrf-dashboard-2021.git`
 <br>
@@ -109,6 +109,7 @@ To update with latest progress data, simply download the `.csv` file and rename 
 Then you have REBUILD and REDEPLOY the application again. <br> Type in `yarn build`
 <br>
 Now we have to REDEPLOY THIS to see changes in the web.
+
 
 That's all.
 

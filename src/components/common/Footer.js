@@ -4,7 +4,7 @@ import styled from 'styled-components'
 function footer(props) {
     return (
         <StyledFooter>
-            <p>Made for 2021 Google Cloud Ready Facilitators & Students with 💖 by <a href="https://naseemshah.dev/">Naseem Shah (@ns4k_tv).</a> <a href="#a">contribute here</a></p>
+            <p>Made for 2021 Google Cloud Ready Facilitators & Students with 💖 by <a href="https://naseemshah.dev/">Naseem Shah (@ns4k_tv).</a> <a href="https://github.com/naseemshah/gcrf-dashboard-2021">contribute here</a></p>
         </StyledFooter>
     );
 }

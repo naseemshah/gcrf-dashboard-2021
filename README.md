@@ -61,12 +61,12 @@ Goto terminal and type in `yarn build` in your project folder. <br>
 - 2.2 - Click "Add project". Then give a project name, for instance, `gcrf-<institution>-2021` and click continue. You can turn off Google analytics if you want. Then click continue. <br>
 ![Step 2.2](/docs/images/step2.2.png)
 ![Step 2.2.1](/docs/images/step2.2.1.png)
-- 2.3 -  Wait till your project is ready and click continue.
+- 2.3 -  Wait till your project is ready and click continue. <br>
 ![Step 2.3](/docs/images/step2.3.png)
-- 2.4 - Goto sidebar menu -> Hosting!
+- 2.4 - Goto sidebar menu -> Hosting! <br>
 ![Step 2.4](/docs/images/step2.4.png)
-then click get started.
-- 2.5 - Follow the on-screen instructions. First, install Firebase tools as shown instruction.
+then click get started. <br>
+- 2.5 - Follow the on-screen instructions. First, install Firebase tools as shown instruction. <br>
 ![Step 2.5](/docs/images/step2.5.png)
 - 2.6 - After installation of the Fiberbase tool, goto the terminal and navigate to the project folder. Then initialize the project as shown in the instructions. MAKE SURE YOU ARE IN THE PROJECT FOLDER WHEN YOU ARE DOING THIS. <br>
 

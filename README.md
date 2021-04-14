@@ -31,7 +31,7 @@ Well, it's easy! This is developed such that facilitators have minimal effort to
 ### STEP 1 - Setting project up locally and testing it:
 - 1.1 - Fork/Clone this repo: <br> `git clone https://github.com/naseemshah/gcrf-dashboard-2021.git`
 - 1.2 - Download Progress Report `.csv` and rename it to `data.csv`.
-- 1.3 - Create a folder named `studentData` in `public` folder. 
+- 1.3 - Create a folder named `studentData` in `public` folder. <br>
 ![Step 1.3](/docs/images/step1.3.png)
 - 1.4 - Place your `data.csv` in  `studentData` folder.
 - 1.5 - Change the configuration file to your config (inputs like institution name and all). You can set your Institution Name here and the latest date of updation. 
@@ -41,9 +41,9 @@ Well, it's easy! This is developed such that facilitators have minimal effort to
 `yarn install`
 - 1.7 - Great! After successfull installation, start the local server so as to test the application. To start the server locally type in <br>
 `yarn start`<br>
-You will see the server running on `localhost:3000`
+You will see the server running on `localhost:3000` <br>
 ![Step 1.7](/docs/images/step1.7.png)
-- 1.8 - Open web browser and goto `localhost:3000` to test the application. Now you have your latest student data up and running locally.
+- 1.8 - Open web browser and goto `localhost:3000` to test the application. Now you have your latest student data up and running locally. <br>
 ![Step 1.8](/docs/images/step1.8.png)
 
 ### STEP 2 - Set up Firebase hosting
@@ -51,14 +51,14 @@ In this step, we will setup a free firebase hosting and deploy the student dashb
 
 
 BEFORE YOU START THIS STEP, BUILD THE APPLICATION <br>
-Goto terminal and type in `yarn build` in your project folder.
+Goto terminal and type in `yarn build` in your project folder. <br>
 ![Build your Application](/docs/images/yarn-build.png)
 
 <br> After building you can follow these steps <br>
 
-- 2.1 - Goto to https://firebase.google.com/products/hosting/  and click "Goto Console". You will be asked to sign in with your Google account.
+- 2.1 - Goto to https://firebase.google.com/products/hosting/  and click "Goto Console". You will be asked to sign in with your Google account. <br>
 ![Step 2.1](/docs/images/step2.1.png)
-- 2.2 - Click "Add project". Then give a project name, for instance, `gcrf-<institution>-2021` and click continue. You can turn off Google analytics if you want. Then click continue. 
+- 2.2 - Click "Add project". Then give a project name, for instance, `gcrf-<institution>-2021` and click continue. You can turn off Google analytics if you want. Then click continue. <br>
 ![Step 2.2](/docs/images/step2.2.png)
 ![Step 2.2.1](/docs/images/step2.2.1.png)
 - 2.3 -  Wait till your project is ready and click continue.
@@ -68,7 +68,7 @@ Goto terminal and type in `yarn build` in your project folder.
 then click get started.
 - 2.5 - Follow the on-screen instructions. First, install Firebase tools as shown instruction.
 ![Step 2.5](/docs/images/step2.5.png)
-- 2.6 - After installation of the Fiberbase tool, goto the terminal and navigate to the project folder. Then initialize the project as shown in the instructions. MAKE SURE YOU ARE IN THE PROJECT FOLDER WHEN YOU ARE DOING THIS.<br>
+- 2.6 - After installation of the Fiberbase tool, goto the terminal and navigate to the project folder. Then initialize the project as shown in the instructions. MAKE SURE YOU ARE IN THE PROJECT FOLDER WHEN YOU ARE DOING THIS. <br>
 
     ![Step 2.6.1](/docs/images/step2.6.1.png)
 
@@ -102,7 +102,7 @@ then click get started.
     <br>
 
     ![Step 2.6.5](/docs/images/step2.6.5.png)
-- 2.7 - Deploying to Web. <br> `firebase deploy` <br><br>
+- 2.7 - Deploying to Web. <br> `firebase deploy` <br> <br>
 ![Step 2.7](/docs/images/step2.7.png)
 
 Whohoo! Congrats your app will be available on the web if followed correctly!

@@ -62,7 +62,7 @@ function Dashboard({studentsData,setIsLoading,showLeaderboard}) {
             <AnimatePresence>
                 {
                    showLeaderboard && 
-                   <Leaderboard /> 
+                   <Leaderboard studentsData={studentsData} /> 
                 }
             </AnimatePresence>
             <AnimatePresence>

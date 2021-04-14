@@ -34,7 +34,8 @@ let StyledHeader = styled.div`
     flex-direction: column;
     align-items: center;
     margin: 20px 0 auto auto;
-    background-color: green;
+    /* width: 100vw; */
+    box-sizing: border-box;
     h1{
         text-transform: uppercase;
         font-size: 25px;
@@ -82,13 +83,13 @@ let StyledHeader = styled.div`
             padding: 0;
             font-weight: 500;
             cursor: pointer;
+            white-space: nowrap;
         }
         .tab-menu-active{
             border-bottom: 2px solid black;
         }
     }
     @media only screen and (max-width: 600px) {
-        background-color: lightblue;
         h1{
             font-size: 18px;
         }
@@ -99,6 +100,13 @@ let StyledHeader = styled.div`
         }
         .facilitator-institution-name{
             margin-top: 10px!important;
+        }
+    }
+    @media only screen and (max-width: 350px) {
+        .tab-menu{
+            p{
+                font-size: 12px;
+            }
         }
     }
 `

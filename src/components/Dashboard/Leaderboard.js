@@ -120,4 +120,24 @@ let StyledLeaderBoard = styled(motion.div)`
             text-align: center;
         }
     }
+    @media only screen and (max-width: 700px) {
+        width: 100%;
+    }
+    @media only screen and (max-width: 550px) {
+        .leaderboard-badges-container{
+            flex-direction: column!important;
+        }
+        .leaderboard-badges{
+            padding: 5px!important;
+            margin: 0 20px 5px 0!important;
+        }
+    }
+    @media only screen and (max-width: 400px) {
+        
+        .leaderboard-wrapper{
+            width: 180px!important;
+            max-width: unset;
+            min-width: unset;
+        }
+    }
 `

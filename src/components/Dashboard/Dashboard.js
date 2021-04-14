@@ -87,6 +87,7 @@ let StyledDash = styled.div`
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
     /* background-color: white; */
     /* border: 2px solid black; */
     /* box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.29); */
@@ -130,6 +131,21 @@ let StyledDash = styled.div`
         :hover{
             box-shadow: 0px 4px 20px -3px rgb(0, 110, 255);
             transform: scale(0.95)
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        padding: 0px;
+        min-width: unset;
+        width: 90%;
+    }
+    @media only screen and (max-width: 450px) {
+        padding: 0px;
+        min-width: unset;
+        width: 90%;
+        .student-email-input{
+            width: 90%;
+            max-width: unset;
+            min-width: unset;
         }
     }
 `

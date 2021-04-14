@@ -17,6 +17,7 @@ let StyledFooter = styled.div`
     justify-content: center;
     margin: 40px auto;
     padding: 10px; 
+    box-sizing: border-box;
     p{
         text-align: center;
         font-size: 11px;

@@ -174,4 +174,9 @@ let StyledProgressCard = styled(motion.div)`
         font-size: 10px;
         text-align: center;
     }
+    @media only screen and (max-width: 450px) {
+        .progress-item{
+            width: 90%;
+        }
+    }
 `

@@ -14,7 +14,7 @@ function StudentEmailForm({handleUserEmailFormSubmit,setUserEmail}) {
             <input 
                 className="student-email-input"
                 type="email"
-                placeholder="Type in your email. Ex: john@google.com"
+                placeholder="Type in your email."
                 required
             />
             <button

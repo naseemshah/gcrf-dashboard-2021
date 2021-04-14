@@ -27,6 +27,10 @@ let StyledMessageDialogueBox = styled(motion.div)`
     padding: 5px 10px;
     color: black;
     border-radius: 10px;
+    box-sizing: border-box;
     font-size: 15px;
-
+    @media only screen and (max-width: 450px) {
+      width: 90%;
+      font-size: 13px;
+    }
 `

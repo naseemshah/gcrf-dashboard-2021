@@ -33,8 +33,8 @@ let StyledHeader = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    padding-bottom: 0;
+    margin: 20px 0 auto auto;
+    background-color: green;
     h1{
         text-transform: uppercase;
         font-size: 25px;
@@ -85,6 +85,20 @@ let StyledHeader = styled.div`
         }
         .tab-menu-active{
             border-bottom: 2px solid black;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        background-color: lightblue;
+        h1{
+            font-size: 18px;
+        }
+        .header-info-container{
+            flex-direction: column;
+            padding: 10px!important;
+            border-radius: 5px;
+        }
+        .facilitator-institution-name{
+            margin-top: 10px!important;
         }
     }
 `

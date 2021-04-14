@@ -30,10 +30,8 @@ Well, it's easy! This is developed such that facilitators have minimal effort to
 
 ### STEP 1 - Setting project up locally and testing it:
 - 1.1 - Fork/Clone this repo: <br> `git clone https://github.com/naseemshah/gcrf-dashboard-2021.git`
-<br>
 - 1.2 - Download Progress Report `.csv` and rename it to `data.csv`.
 - 1.3 - Create a folder named `studentData` in `public` folder. 
-- <br> <br>
 ![Step 1.3](/docs/images/step1.3.png)
 - 1.4 - Place your `data.csv` in  `studentData` folder.
 - 1.5 - Change the configuration file to your config (inputs like institution name and all). You can set your Institution Name here and the latest date of updation. 

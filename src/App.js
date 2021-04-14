@@ -22,7 +22,6 @@ function App() {
           return (parseInt(student2["# of Quests Completed"]+student2["# of Skill Badges Completed"]))-parseInt((student1["# of Quests Completed"]+student1["# of Skill Badges Completed"]))
         })
         setStudentsData(results)
-        console.log(results);
         setIsLoading(false)
       }
     });

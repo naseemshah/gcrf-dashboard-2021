@@ -8,11 +8,9 @@ function ProgressCard({userStudentDetails}) {
     let completedQuestBadges = parseInt(userStudentDetails["# of Quests Completed"])
     let completedSkillBadges = parseInt(userStudentDetails["# of Skill Badges Completed"])
     let totalBadgesTaken = completedQuestBadges + completedSkillBadges
-    console.log(completedQuestBadges,completedSkillBadges,totalBadgesTaken);
     let clamp = (val, min, max)  =>{
         return val > max ? max : val < min ? min : val;
     }
-    console.log(clamp((totalBadgesTaken/12)*100,0,100));
     let milestones = [
         {
             milestoneTitle: "Milestone #1 - Complete any 8 quests & 4 skill badges in the program",
@@ -61,7 +59,6 @@ function ProgressCard({userStudentDetails}) {
 
         }
     ]
-    console.log(milestones);
     return (
         <StyledProgressCard
             initial={{ opacity: 0, translateX: 2000 }}

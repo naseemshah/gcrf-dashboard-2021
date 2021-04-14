@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import React from 'react';
 
 function Milestone({milestoneData}) {
-    console.log(milestoneData);
     return (
         <div 
             className="progress-item"

@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 function Leaderboard({studentsData}) {
-    console.log(studentsData);
     return (
         <StyledLeaderBoard
             initial={{ opacity: 0, translateX: 2000 }}

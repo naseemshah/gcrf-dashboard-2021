@@ -16,11 +16,9 @@ function Dashboard({studentsData,setIsLoading,showLeaderboard}) {
         e.preventDefault()
         setIsLoading(true)
         if(studentsData?.data){
-            console.log(studentsData.data);
             let foundStudent = studentsData.data.find( student => {
                 return student["Student Email"] === userEmail
             })
-            console.log(foundStudent);
             if(foundStudent){
                 setUserStudentDetails(foundStudent)
                 setIsLoading(false)
@@ -88,10 +86,6 @@ let StyledDash = styled.div`
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    /* background-color: white; */
-    /* border: 2px solid black; */
-    /* box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.29); */
-    /* border-radius: 10px; */
     .student-email-form{
         display: flex;
         flex-direction: column;

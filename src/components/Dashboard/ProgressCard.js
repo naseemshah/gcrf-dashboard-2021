@@ -7,7 +7,6 @@ import StudentInfo from './StudentInfo';
 function ProgressCard({userStudentDetails}) {
     let completedQuestBadges = parseInt(userStudentDetails["# of Quests Completed"])
     let completedSkillBadges = parseInt(userStudentDetails["# of Skill Badges Completed"])
-    let totalBadgesTaken = completedQuestBadges + completedSkillBadges
     let clamp = (val, min, max)  =>{
         return val > max ? max : val < min ? min : val;
     }
@@ -16,8 +15,8 @@ function ProgressCard({userStudentDetails}) {
             milestoneTitle: "Milestone #1 - Complete any 8 quests & 4 skill badges in the program",
             milestoneCompletedQuestBadges: completedQuestBadges < 8 ? completedQuestBadges : 8,
             milestoneCompletedSkillBadges: completedSkillBadges < 4 ? completedSkillBadges : 4,
-            hasMilestoneUnlocked: totalBadgesTaken >= 12 ? true : false,
-            milestoneProgressPercentage: clamp((totalBadgesTaken/12)*100,0,100).toFixed(2),
+            hasMilestoneUnlocked: completedQuestBadges >= 8 && completedSkillBadges >=4 ? true : false,
+            milestoneProgressPercentage: clamp(((completedQuestBadges/8)+(completedSkillBadges/4))*50,0,100).toFixed(2),
             maxQuestBadges: 8,
             maxSkillBadges: 4,
             milestoneColor: "#4285F4",
@@ -27,8 +26,8 @@ function ProgressCard({userStudentDetails}) {
             milestoneTitle: "Milestone #2 - Complete any 16 quests & 8 skill badges in the program",
             milestoneCompletedQuestBadges: completedQuestBadges < 16 ? completedQuestBadges : 16,
             milestoneCompletedSkillBadges: completedSkillBadges < 8 ? completedSkillBadges : 8,
-            hasMilestoneUnlocked: totalBadgesTaken >= 24 ? true : false,
-            milestoneProgressPercentage: clamp((totalBadgesTaken/24)*100,0,100).toFixed(2),
+            hasMilestoneUnlocked: completedQuestBadges >= 16 && completedSkillBadges >=8 ? true : false,
+            milestoneProgressPercentage: clamp(((completedQuestBadges/16)+(completedSkillBadges/8))*50,0,100).toFixed(2),
             maxQuestBadges: 16,
             maxSkillBadges: 8,
             milestoneColor: "#FBBC05",
@@ -38,8 +37,8 @@ function ProgressCard({userStudentDetails}) {
             milestoneTitle: "Milestone #3 - Complete any 24 quests & 12 skill badges in the program",
             milestoneCompletedQuestBadges: completedQuestBadges < 24 ? completedQuestBadges : 24,
             milestoneCompletedSkillBadges: completedSkillBadges < 12 ? completedSkillBadges : 12,
-            hasMilestoneUnlocked: totalBadgesTaken >= 36 ? true : false,
-            milestoneProgressPercentage: clamp((totalBadgesTaken/36)*100,0,100).toFixed(2),
+            hasMilestoneUnlocked: completedQuestBadges >= 24 && completedSkillBadges >=12 ? true : false,
+            milestoneProgressPercentage: clamp(((completedQuestBadges/24)+(completedSkillBadges/12))*50,0,100).toFixed(2),
             maxQuestBadges: 24,
             maxSkillBadges: 12,
             milestoneColor: "#34A853",
@@ -50,8 +49,8 @@ function ProgressCard({userStudentDetails}) {
             milestoneTitle: "Ultimate Milestone: Complete 30 Quests & all 15 Skill Badges",
             milestoneCompletedQuestBadges: completedQuestBadges < 30 ? completedQuestBadges : 30,
             milestoneCompletedSkillBadges: completedSkillBadges < 15 ? completedSkillBadges : 15,
-            hasMilestoneUnlocked: totalBadgesTaken >= 45 ? true : false,
-            milestoneProgressPercentage: clamp((totalBadgesTaken/45)*100,0,100).toFixed(2),
+            hasMilestoneUnlocked: completedQuestBadges >= 30 && completedSkillBadges >=15 ? true : false,
+            milestoneProgressPercentage: clamp(((completedQuestBadges/30)+(completedSkillBadges/15))*50,0,100).toFixed(2),
             maxQuestBadges: 30,
             maxSkillBadges: 15,
             milestoneColor: "#EA4335",

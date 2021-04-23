@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeaderLogo from '../../assets/img/headerLogo.png'
+import HeaderLogo from '../../assets/img/HeaderLogo.png'
 import { facilitatorInstituionName, facilitatorLastUpdated } from '../../appConfig'
 
 
@@ -13,7 +13,7 @@ function Header({showLeaderboard,setShowLeaderboard}) {
                 <p className="facilitator-last-updated">Last Updated: {facilitatorLastUpdated}</p>
                 <p className="facilitator-institution-name">{facilitatorInstituionName}</p>
             </div>
-            <div className="tab-menu">
+            {/* <div className="tab-menu">
                 <p 
                     className={`${ !showLeaderboard && 'tab-menu-active'}`}
                     onClick={()=>{setShowLeaderboard(false)}}
@@ -22,7 +22,7 @@ function Header({showLeaderboard,setShowLeaderboard}) {
                     className={`${ showLeaderboard && 'tab-menu-active'}`}
                     onClick={()=>{setShowLeaderboard(true)}}
                 >Leaderboard</p>
-            </div>
+            </div> */}
         </StyledHeader>
     );
 }

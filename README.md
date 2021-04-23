@@ -8,13 +8,11 @@ This Application automates the Manual GCR facilitator daily student report gener
 - Facilitators just have to replace with the latest `.csv` file received from Google. Nothing else to do!
 - Only the students can see their progress and their profile details, which saves facilitators time. 
 - Facilitators do not need to spend hours filtering data and making progress reports daily. 
-- Leaderboard Page makes the students enrolled in the program have a sense of competition, thus making them complete their Quests and Skill badges sooner.
 - Students get the latest data just with a click and are able track their progress.
 
 ## How this works?
 - The Application will read the data directly from the 2021 GCRF daily student report sent to facilitators which are in `.csv` format. 
 - Upon entering the email address by the student, their progress is displayed on the "My Progress Tab". This application will parse through the data.
-- Leaderboard can be accessed in the "Leaderboard" tab so that students can have a sense of competition.
 
 ## How to host the GCRF Dashboard for your campus?
 

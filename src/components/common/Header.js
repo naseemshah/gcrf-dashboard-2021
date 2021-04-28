@@ -13,16 +13,6 @@ function Header({showLeaderboard,setShowLeaderboard}) {
                 <p className="facilitator-last-updated">Last Updated: {facilitatorLastUpdated}</p>
                 <p className="facilitator-institution-name">{facilitatorInstituionName}</p>
             </div>
-            {/* <div className="tab-menu">
-                <p 
-                    className={`${ !showLeaderboard && 'tab-menu-active'}`}
-                    onClick={()=>{setShowLeaderboard(false)}}
-                >Your Progress</p>
-                <p
-                    className={`${ showLeaderboard && 'tab-menu-active'}`}
-                    onClick={()=>{setShowLeaderboard(true)}}
-                >Leaderboard</p>
-            </div> */}
         </StyledHeader>
     );
 }

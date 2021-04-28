@@ -3,6 +3,6 @@
 // instituion name. Change here will affect whole application.
 
 let facilitatorInstituionName = "Cochin University of Science and Technology"
-let facilitatorLastUpdated = "22 APRIL 2021"
+let facilitatorLastUpdated = "26 APRIL 2021"
 
 export {facilitatorInstituionName,facilitatorLastUpdated}
